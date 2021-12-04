@@ -64,3 +64,7 @@ def calculateSampleSizeMean(s,e):
 # e = Desired margin of error (eg. 0.05 as 5% margin of error)
 def calculateSampleSizeProportion(p,e):
     return (1.96**2)*(p*(1-p)/e**2)
+
+## Covariance ##
+data = np.array([])
+np.cov(data)
