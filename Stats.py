@@ -67,4 +67,4 @@ def calculateSampleSizeProportion(p,e):
 
 ## Covariance ##
 data = np.array([])
-np.cov(data)
+cov = np.cov(data)
