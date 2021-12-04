@@ -34,6 +34,9 @@ def calculateConfidenceIntervalMean(data):
     return 1.96*(np.std(data)/np.sqrt(len(data)))
 
 ## Standard Error of proportion ##
+# p = proportion
+def calculateStandardErrorProportion(data,p):
+    return np.sqrt(p*(1-p)/len(data))
 
 ## Confidence interval for proportion (95%) ##
 # p = proportion
