@@ -25,9 +25,9 @@ def seStd(data):
 
 samstd = seStd(data)
 
-
-
 ## Standard Error of mean ##
+def calculateStandardErrorMean(data):
+    return np.std(data)/np.sqrt(len(data))
 
 ## Confidence interval for population mean (95%) ##
 def calculateConfidenceIntervalMean(data):
