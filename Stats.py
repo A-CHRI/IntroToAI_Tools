@@ -1,12 +1,19 @@
 import numpy as np
 
 ## Mean ##
+data = np.array([])
+mean = np.mean(data)
 
 ## Standard Deviation ##
+data = np.array([])
+std = np.std(data)
 
 ## Variance ##
+data = np.array([])
+var = np.std(data)**2
 
 ## Sample estimator of standard deviation ##
+
 
 ## Standard Error of mean ##
 
