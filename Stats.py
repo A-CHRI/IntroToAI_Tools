@@ -31,7 +31,7 @@ def calculateStandardErrorMean(data):
 
 ## Confidence interval for population mean (95%) ##
 def calculateConfidenceIntervalMean(data):
-    return 1.96*(np.std(data)/np.sqrt(len(data)))
+    return f"{np.mean(data)} +/- {1.96*(np.std(data)/np.sqrt(len(data)))}"
 
 ## Standard Error of proportion ##
 # p = proportion
@@ -42,7 +42,7 @@ def calculateStandardErrorProportion(data,p):
 # p = proportion
 # n = sample size
 def calculateConfidenceIntervalProportion(p,n):
-    1.96*np.sqrt(p*(1-p)/n)
+    return f"{p} +/- {1.96*np.sqrt(p*(1-p)/n)}"
 
 ## Agresti-Coull interval for proportion (95%) ##
 # p = proportion
