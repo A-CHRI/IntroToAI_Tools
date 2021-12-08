@@ -68,3 +68,10 @@ def calculateSampleSizeProportion(p,e):
 ## Covariance ##
 data = np.array([])
 cov = np.cov(data)
+
+## Correlation
+def calculateCorrelation(data):
+    temp=np.cov(data)
+    x=[char for char in temp[0]]
+    y=[char for char in temp[1]]
+    return (x[1]/(np.sqrt(x[0])*np.sqrt(y[1])))
